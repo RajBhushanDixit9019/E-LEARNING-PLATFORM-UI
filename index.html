@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodTech E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CodTech E-Learning Platform</h1>
+      <p>Completion Certificate will be issued on your internship end date.</p>
+    </header>
+
+    <nav>
+      <button onclick="showSection('courses')" class="active">Courses</button>
+      <button onclick="showSection('video')">Video</button>
+      <button onclick="showSection('progress')">Progress</button>
+      <button onclick="showSection('certificate')">Certificate</button>
+    </nav>
+
+    <div class="container">
+      <!-- Course Listing -->
+      <div id="courses" class="section active">
+        <h2>Available Courses</h2>
+        <div class="courses">
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript Course" />
+            <h3>JavaScript Basics</h3>
+            <p>Learn the fundamentals of JavaScript.</p>
+            <button onclick="enrollCourse()">Enroll</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              alt="React Course" />
+            <h3>React Essentials</h3>
+            <p>Understand core React concepts.</p>
+            <button onclick="enrollCourse()">Enroll</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML & CSS" />
+            <h3>HTML & CSS</h3>
+            <p>Master the building blocks of the web.</p>
+            <button onclick="enrollCourse()">Enroll</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Embedding -->
+      <div id="video" class="section">
+        <h2>Course Video</h2>
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+
+      <!-- Progress -->
+      <div id="progress" class="section">
+        <h2>Progress Tracking</h2>
+        <div class="progress-container">
+          <p>JavaScript Basics - 70% Completed</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 70%">70%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate -->
+      <div id="certificate" class="section">
+        <h2>Completion Certificate</h2>
+        <div class="certificate">
+          <h3>Certificate of Completion</h3>
+          <p>This is to certify that</p>
+          <h2><strong>Your Name</strong></h2>
+          <p>has successfully completed the internship and training.</p>
+          <p><em>Issued on: Internship End Date</em></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
